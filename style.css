@@ -3,8 +3,9 @@ body {
 	padding: 0;
 	background: black;
 	color: white;
-	font-family: fantasy;
+	font-family: 'Quicksand', sans-serif;
 }
+
 main {
 	padding: 1em;
 }
@@ -12,5 +13,10 @@ main {
 
 h1{
 	color: orange;
-	
+	font-family: 'Quicksand', sans-serif;
+	}
+
+p{
+color: white;
+
 }
