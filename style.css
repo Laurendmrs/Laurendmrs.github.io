@@ -1,62 +1,86 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-* {
-  margin:0; padding:0;
+html,body{
+	padding:0;
+	margin:0 auto;
+	width:100%;
+	height:100%;
+	background-color:#846291;
+	text-align:center;
+	font-family:arial;
+	color: white;
 }
-
-body {
-  background: #8080c0;
+header{
+	margin-top:-20px;
 }
-
-h1 {
-	color: #111;
-	font-family: Arial, sans-serif;
-	font-size: 275px;
-	font-weight: bold;
-	letter-spacing: -1px;
-	line-height: 1;
-	text-align: center;
+#main{
+	width:100%;
+	height:80%;
 }
-
-h2 {
-	color: #111;
-	font-family: 'Open Sans', Arial, sans-serif;
-	font-size: 30px;
-	font-weight: 300;
-	line-height: 32px;
-	margin: 0 0 72px;
-	text-align: center;
+#incorrectGuesses{
+	width:50%;
+	float:left;
 }
-
-p {
-	color: #302603; /* lighter: #685206 */
-	font-family: Arial, sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	margin: 0 0 24px;
-	text-align: justify;
-	text-justify: inter-word;
+#hangmanLives{
+	width:50%;
+	float:right;
 }
-
-.left {
-	float: left;
-	margin-left: 15px;
-	width: 260px;
+#popUpBox{
+	height:20px;
+	margin-top:-15px;
 }
-
-.right {
-	float: right;
-	margin-right: 15px;
-	width: 260px;
+#popUpText{
+	
 }
-
-.content {
-  margin: 70px auto;
-  width: 650px;
-  background: #8080c0;
+#lines{
+	margin-top:-5px;
+	margin-bottom:5px;
 }
-
-.clear {
-  clear: both;
+#display{
+	width:50%;
+	float:right;
+	margin-top:-35px;
 }
-
+#hangmanDisplay{
+	text-align:left;
+	font-size:15px;
+}
+#yes,#no{
+	display: inline-block;
+    margin: 20px;
+	padding:10px;
+	height:20px;
+	width:120px;
+	cursor:pointer;
+	text-align:center;
+}
+#finalYes,#finalNo{
+	display: inline-block;
+    margin: 20px;
+	padding:10px;
+	height:20px;
+	cursor:pointer;
+	text-align:center;
+}
+#yes,#finalYes{
+	background-color:white;
+}
+#no,#finalNo{
+	background-color:grey;
+}
+#yesno{
+	text-align:center;
+}
+footer{
+	display:absolute;
+	margin-top:-80px;
+}
+@media screen and (max-width: 630px){
+	#incorrectGuesses,#hangmanLives{
+		display:block;
+		clear:both;
+		width:100%;
+	}
+	#display{
+		clear:both;
+		width:70%;
+	}
+}
